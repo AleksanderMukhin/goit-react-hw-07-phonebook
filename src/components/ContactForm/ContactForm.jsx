@@ -11,10 +11,13 @@ const ContactForm = () => {
   const handleAddContact = e => {
     e.preventDefault();
     const form = e.target.elements;
+    console.log(form.name.value);
+    console.log(currentContacts);
 
     const isDuplicate = () => {
       return currentContacts.some(
-        ({ contact }) => contact.name === form.name.value
+        ({ contact }) =>
+          contact.name.toLowerCase() === form.name.value.toLowerCase()
       );
     };
 
