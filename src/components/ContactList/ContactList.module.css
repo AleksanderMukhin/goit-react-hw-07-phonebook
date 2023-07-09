@@ -1,0 +1,12 @@
+.item{
+  display: flex;
+  margin-top: 10px;
+}
+
+.item_name{
+  margin-right: 5px;
+}
+
+.item_number{
+  margin-right: 15px;
+}
